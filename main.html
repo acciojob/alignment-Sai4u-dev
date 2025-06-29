@@ -1,73 +1,113 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<title>HTML Assignment 3</title>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>HTML Tables Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    table.middle {
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    table.middle th,
+    table.middle td {
+      border: 1px solid black;
+      padding: 12px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .green-row {
+      background-color: green;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .blue-row {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1 style="text-align: center;">HTML Assignment #3</h1>
 
-<table id="table-1" class="middle">
+  <h2>HTML Table Example</h2>
+
+  <!-- Table 1: Alignment Table -->
+  <table class="middle">
     <tr>
-      <td id="t11">Cell 1</td>
-      <td>Cell 2</td>
-      <td class="right">Cell 3</td>
-    </tr>
-    <tr class="center">
-      <td class="center">Cell 4</td>
-      <td class="center">Cell 5</td>
-      <td class="center right">Cell 6</td>
+      <td>Row 1 Col 1</td>
+      <td class="center">Row 1 Col 2</td>
+      <td class="right">Row 1 Col 3</td>
     </tr>
     <tr>
-      <td>Cell 7</td>
-      <td>Cell 8</td>
-      <td class="right">Cell 9</td>
+      <td>Row 2 Col 1</td>
+      <td class="center">Row 2 Col 2</td>
+      <td class="right">Row 2 Col 3</td>
+    </tr>
+    <tr>
+      <td>Row 3 Col 1</td>
+      <td class="center">Row 3 Col 2</td>
+      <td class="right">Row 3 Col 3</td>
     </tr>
   </table>
-  <br>
 
-  <!-- Table 2 -->
-  <table id="table-2" class="middle">
+  <!-- Table 2: Colspan / Rowspan -->
+  <table class="middle">
     <tr>
-      <td id="t21" colspan="6">Header Row</td>
+      <td colspan="6">This cell spans all 6 columns</td>
     </tr>
     <tr>
-      <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
+      <td>2,1</td><td>2,2</td><td>2,3</td><td>2,4</td><td>2,5</td><td>2,6</td>
     </tr>
     <tr>
-      <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
+      <td>3,1</td><td>3,2</td><td>3,3</td><td>3,4</td><td>3,5</td><td>3,6</td>
     </tr>
     <tr>
-      <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
+      <td>4,1</td><td>4,2</td><td>4,3</td><td>4,4</td><td>4,5</td><td>4,6</td>
     </tr>
     <tr>
-      <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
+      <td>5,1</td><td>5,2</td><td>5,3</td><td>5,4</td><td>5,5</td><td>5,6</td>
     </tr>
     <tr>
-      <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+      <td>6,1</td><td>6,2</td><td>6,3</td><td>6,4</td><td>6,5</td><td>6,6</td>
     </tr>
   </table>
-  <br>
 
-  <!-- Table 3 -->
-  <table id="table-3" class="middle">
-    <tr class="green">
-      <td>Green Row 1</td><td>Cell</td><td>Cell</td>
+  <!-- Table 3: Colored Rows and Image -->
+  <table class="middle">
+    <tr class="green-row">
+      <td colspan="3">This is a green row</td>
     </tr>
     <tr>
-      <td>Cell</td><td id="t-image"><img src="https://via.placeholder.com/100" alt="Sample Image"></td><td>Cell</td>
+      <td>Left</td>
+      <td><img src="https://picsum.photos/100" alt="Sample Image"></td>
+      <td>Right</td>
     </tr>
-    <tr class="blue">
-      <td>Blue Row</td><td>Cell</td><td>Cell</td>
+    <tr class="blue-row">
+      <td colspan="3">This is a blue row</td>
     </tr>
   </table>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
